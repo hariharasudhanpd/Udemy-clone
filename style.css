@@ -86,7 +86,18 @@ body{
     color: white;
     padding: 10px;
     border-radius: 30px;
+    border: solid #A435F0 1px;
 }
+
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: #A435F0;
+    cursor: pointer;
+    border: solid #A435F0 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
 
 .sale-image img{
      width: 100%;
@@ -106,6 +117,22 @@ body{
     color: black;
     position: absolute;
     top: 190px;
+    animation-name: fade;
+    animation-duration: 2s;
+    opacity: 0; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .offer_title{
